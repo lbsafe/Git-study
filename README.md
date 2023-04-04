@@ -1,5 +1,16 @@
 # GIT 사용법
 ## README 작성법
+
+0. 제목
+    ```js
+    # This is a H1
+    ## This is a H2
+    ### This is a H3
+    #### This is a H4
+    ##### This is a H5
+    ###### This is a H6
+    ```
+
 1. BlockQuote
     > ">" 표시로 사용한다
 ***
