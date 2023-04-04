@@ -63,3 +63,31 @@ var 변수 = 'abc';
 ***
 
 7. 강조
+    
+    7-1. Italic
+
+    *single asterisks* <br>
+    _single underscores_ <br>
+
+    7-2. Bold
+
+    **double asterisks** <br>
+    __double underscores__ <br>
+
+    3-2. 삭선
+
+    ~~cancelline~~
+***
+
+8. 이미지
+
+    ![테스트 이미지](https://picsum.photos/id/237/300/300)
+
+    ![테스트 이미지](https://picsum.photos/id/103/200/200 "사진")
+
+    ```js
+    사이즈 조절 기능은 없기 때문에 <img width="" height=""></img>를 이용한다.
+    ```
+
+    <img src="https://picsum.photos/seed/picsum/200" width="250px" height="200px" title="px(픽셀) 크기 설정" alt="이미지"></img>
+***
