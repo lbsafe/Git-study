@@ -23,27 +23,27 @@
 
     4-1. < pre >< code >{code}</ code ></ pre > 방식<br>
     4-2. 코드블럭코드("```") js 을 이용하는 방법
-<pre>
-<code>
-let 변수 = 'abc';
-const 변수 = 'abc';
-var 변수 = 'abc';
-</code>
-</pre>
+    <pre>
+    <code>
+    let 변수 = 'abc';
+    const 변수 = 'abc';
+    var 변수 = 'abc';
+    </code>
+    </pre>
 
-```js
-let 변수 = 'abc';
-const 변수 = 'abc';
-var 변수 = 'abc';
-```
+    ```js
+    let 변수 = 'abc';
+    const 변수 = 'abc';
+    var 변수 = 'abc';
+    ```
 ***
 
 5. 수평선 < hr/ >
-```
-***
----
-```
-***
+    ```
+    ***
+    ---
+    ```
+ ***
 
 6. 링크
 
