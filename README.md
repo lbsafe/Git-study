@@ -10,6 +10,7 @@
     ##### This is a H5
     ###### This is a H6
     ```
+***
 
 1. BlockQuote
     > ">" 표시로 사용한다
@@ -17,7 +18,7 @@
 
 2. **목록**
 
-    2-1. 순서있는 목록은 숫자와 점을 사용한다.<br>
+    2-1. 순서있는 목록은 숫자와 점을 사용한다.  
     2-2. 순서없는 목록(글머리 기호: *, +, - 지원)
     * 순서1
         + 순서2
@@ -26,13 +27,18 @@
 
 3. **들여쓰기**
 
-    3-1. 들여쓰기는 4개의 공백 또는 하나의 탭으로 한다.<br>
+    3-1. 들여쓰기는 4개의 공백 또는 하나의 탭으로 한다.  
     3-2. 한줄을 내리고 쓰지 않으면 제대로 인식되지 않는다.
+***
+
+3. **줄바꿈**
+
+    텍스트 뒤에 space bar를 두번 치고 enter를 누른다.
 ***
 
 4. **코드블럭**
 
-    4-1. < pre >< code >{code}</ code ></ pre > 방식<br>
+    4-1. < pre >< code >{code}</ code ></ pre > 방식  
     4-2. 코드블럭코드("```") js 을 이용하는 방법
     <pre>
     <code>
@@ -80,21 +86,27 @@
     사용법: *text* or _text_
     ```
 
-    *single asterisks* <br>
-    _single underscores_ <br>
+    *single asterisks*  
+    _single underscores_  
 
     7-2. Bold
     ```js
     사용법: **text** or __text__
     ```
-    **double asterisks** <br>
-    __double underscores__ <br>
+    **double asterisks**  
+    __double underscores__  
 
     3-2. 삭선
     ```js
     사용법: ~~text~~
     ```
     ~~cancelline~~
+
+    3-3. 동시 사용
+    ```js
+    사용법: ~~**_text_**~~
+    ```
+    ~~**_multi_**~~
 ***
 
 8. **이미지**
@@ -109,3 +121,44 @@
 
     <img src="https://picsum.photos/seed/picsum/200" width="250px" height="200px" title="px(픽셀) 크기 설정" alt="이미지"></img>
 ***
+
+9. **테이블**
+
+    --- 정렬하지 않음  
+    :--- 왼쪽으로 정렬  
+    ---: 오른쪽으로 정렬  
+    :---: 가운데 정렬  
+
+    ```js
+    | 항목 | 제작 | 나이 |
+    |:---|:---:|---:|
+    |1|오건희|22|
+    |2|오뿌까|10|
+    ```
+
+    | 번호 | 제작 | 나이 |
+    |:---|:---:|---:|
+    |1|오건희|26|
+    |2|오뿌까|10|
+***
+    
+10. **토글**
+    ```js
+    <details open>
+    <summary>열린 토글바</summary>
+    열린 상태로 보여준다.
+    </details>
+    <details>
+    <summary>닫힌 토글바</summary>
+    닫힌 상태로 보여준다.
+    </details>
+    ```
+
+    <details open>
+    <summary>열린 토글바</summary>
+    열린 상태로 보여준다.
+    </details>
+    <details>
+    <summary>닫힌 토글바</summary>
+    닫힌 상태로 보여준다.
+    </details>
