@@ -1,6 +1,6 @@
 # GIT 사용법
 
-<p align="center"><img src="https://user-images.githubusercontent.com/65703793/230288932-04010e95-2e47-4b60-8dfa-612741886fd9.png" alt="js" width="150px"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/65703793/230288932-04010e95-2e47-4b60-8dfa-612741886fd9.png" alt="js" width="200px"></p>
 
 ## README 작성법
 
