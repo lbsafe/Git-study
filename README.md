@@ -2,6 +2,57 @@
 
 <p align="center"><img src="https://user-images.githubusercontent.com/65703793/230288932-04010e95-2e47-4b60-8dfa-612741886fd9.png" alt="js" width="200px"></p>
 
+## git 기본 명령어
+
+> Ctril+Shift+` 터미널 단축기
+
+1. **git init**
+
+    >git 사용을 선언한다.
+
+    ```html
+    git init
+    ```
+
+2. **git add test.html**
+
+    >파일 현재 상태 기록 => 스테이징한다.
+    ```html
+    git add 파일명
+    ```
+
+3. **git commit -m'test'**
+
+    >파일에 설명을 첨부한다.
+    ```html
+    git commit -m'테스트입니다.'
+    ```
+
+4. **git add**
+
+    >파일을 스테이징한다.
+    * 특정 파일 스테이징
+        ```html
+        git add test.html
+        ```
+    * 모든 파일 스테이징
+        ```html
+        git add .
+        ```
+    * 2개 이상 파일 스타이징
+        ```html
+        git add test.html test2.html
+        ```
+
+5. **git status**
+
+    >git 상태창 열기
+    ```html
+    git status
+    ```
+
+***
+
 ## README 작성법
 
 1. **제목**
