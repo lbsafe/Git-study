@@ -76,7 +76,7 @@
         git difftool 커밋아이디1 커밋아이디2
          => 커밋 끼리 비교 가능(아이디는 log를 통해 조회)
         ```
-:pushpin:Git Graph   
+:pushpin:**Git Graph**   
 >Git Graph 확장자를 통해 더 명확한 비교가 가능하다.   
 단축키 ctrl + k + g
 ***
