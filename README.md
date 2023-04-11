@@ -32,14 +32,17 @@
 
     >파일을 스테이징한다.
     * 특정 파일 스테이징
+    
         ```html
         git add test.html
         ```
     * 모든 파일 스테이징
+
         ```html
         git add .
         ```
     * 2개 이상 파일 스타이징
+
         ```html
         git add test.html test2.html
         ```
@@ -51,6 +54,31 @@
     git status
     ```
 
+6. **git log**
+
+    >commit 내역 조회
+    ```html
+    git log --all --online
+    ```
+
+7. **git diff**
+
+    >최근 commit과 현재 파일을 비교해서 보여준다.
+    * git diff
+
+        ```html
+        j/k 조작 q종료
+        ```
+    * git difftool
+
+        ```html
+        hjkl 조작 :q종료
+        git difftool 커밋아이디1 커밋아이디2
+         => 커밋 끼리 비교 가능(아이디는 log를 통해 조회)
+        ```
+:pushpin:Git Graph   
+>Git Graph 확장자를 통해 더 명확한 비교가 가능하다.   
+단축키 ctrl + k + g
 ***
 
 ## README 작성법
