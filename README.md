@@ -76,10 +76,25 @@
         git difftool 커밋아이디1 커밋아이디2
          => 커밋 끼리 비교 가능(아이디는 log를 통해 조회)
         ```
-:pushpin:**Git Graph**   
->Git Graph 확장자를 통해 더 명확한 비교가 가능하다.   
-단축키 ctrl + k + g
+    :pushpin:**Git Graph**   
+    >Git Graph 확장자를 통해 더 명확한 비교가 가능하다.   
+    단축키 ctrl + k + g
+
+8. **git branch**
+
+    >브랜치를 생성해준다.
+    ```html
+    git branch 브랜치명
+    ```
+
+9. **git switch**
+
+    >브랜치로 이동한다.
+    ```html
+    git switch 브랜치명
+    ```
 ***
+    
 
 ## git 터미널 명령어
 
