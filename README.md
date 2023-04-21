@@ -101,7 +101,7 @@
     git merge 브랜치명
     ```
     :exclamation: 주의사항   
-    * 브랜치를 합칠 때는 기분이 될 브랜치로 이동 후 merge한다.   
+    * 브랜치를 합칠 때는 기준이 될 브랜치로 이동 후 merge한다.   
     * Conflct(충돌)발생 시 해당 코드를 수정하고 git add와 git commit을 해준다.
 ***
     
