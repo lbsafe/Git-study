@@ -94,15 +94,83 @@
     git switch 브랜치명
     ```
 
-9. **git merge**
+10. **git merge**
 
     >브랜치를 합친다.
     ```html
     git merge 브랜치명
     ```
+
     :exclamation: 주의사항   
-    * 브랜치를 합칠 때는 기준이 될 브랜치로 이동 후 merge한다.   
-    * Conflct(충돌)발생 시 해당 코드를 수정하고 git add와 git commit을 해준다.
+    1. 브랜치를 합칠 때는 기준이 될 브랜치로 이동 후 merge한다.   
+    2. Conflct(충돌)발생 시 해당 코드를 수정하고 git add와 git commit을 해준다.
+    
+11. **git fetch**
+
+    >원격 저장소의 변경사항을 로컬 저장소로 가져온다. 이때 git pull과 다르게 병합은 하지 않는다.
+    
+    ```html
+    git fetch
+    ```
+    * git fetch --prune origin 
+
+        ```html
+        prune은 fetching 하기 전, 리모트에 존재하지 않는 remote tracking branch를 삭제한다.
+        ```
+
+12. **git reset**
+
+    >커밋 취소하기
+
+    :heavy_exclamation_mark: * 커밋이
+    로컬과 원격의 커밋 히스토리가 불일치해도git push --force
+
+
+    * git reset --hard
+
+        ```html
+        $ git log --oneline
+        af4068f (HEAD -> main, origin/main) README.md 내용수정
+        e81d561 브랜치, 스위치, 머지 내용 추가
+        78d3604 취소할 커밋
+
+
+        마지막 커밋 78d3604을 취소하고 싶을 때,
+        git reset --hard <COMMIT_ID> 명령어로 HEAD가 이전 커밋(e81d561)을 가리키도록 한다.
+
+        특징: hard 옵션을 사용하면 돌아간 커밋 이후의 변경 이력은 모두 삭제한다.
+        ```
+
+    * git reset --mixed
+
+        ```html
+        코드를 반영하려면 add 명령어로 stage에 반영하고 커밋한다.
+
+        특징: 변경 이력은 모두 삭제하지만 변경 내용은 남아있다.
+        ```
+
+    * git reset --soft
+
+        ```html
+        add 를 하지 않고 바로 커밋이 가능하다.
+
+        특징: 변경 이력은 모두 삭제하지만 변경 내용은 남아있다. stage 되어있다.
+        ```
+    
+    * git reset --hard origin/main
+
+        ```html
+        origin/main branch와 일치시킨다. (git fetch로 remote tracking branch의 커밋을 remote 저장소의 브랜치와 일치시켰기에 효용이 있다.)
+        ```
+
+13. **git revert**
+
+    > 커밋 내용 되돌리기
+
+
+
+
+
 ***
     
 
