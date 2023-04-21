@@ -196,7 +196,7 @@ git clean
 
 2. **git reset --hard origin/main**를 통해 방금 전 동기화된 remote tracking branch (origin/main)에 로컬 브랜치를 일치 시킨다.
 
-3. 만약 작성 중인 코드가 있었고, 필요 없다고 생각하면 git clean을 통하여 삭제한다. (필요에 따라 생략)
+3. 만약 작성 중인 코드가 있었고, 필요 없다고 생각하면 git clean을 통하여 삭제한다. (필요에 따라 사용)
 ***
 
 ## git 터미널 명령어
