@@ -76,7 +76,7 @@
         git difftool 커밋아이디1 커밋아이디2
          => 커밋 끼리 비교 가능(아이디는 log를 통해 조회)
         ```
-    :pushpin:**Git Graph**   
+    :pushpin: **Git Graph**   
     >Git Graph 확장자를 통해 더 명확한 비교가 가능하다.   
     단축키 ctrl + k + g
 
@@ -184,7 +184,7 @@
     ```
 ***
 
-**:pushpin:원격 저장소와 로컬 저장소의 소스코드를 일치시키는 방법**
+**:pushpin: 원격 저장소와 로컬 저장소의 소스코드를 일치시키는 방법**
 
 ```html
 git fetch --prune origin 
@@ -196,7 +196,7 @@ git clean
 
 2. **git reset --hard origin/main**를 통해 방금 전 동기화된 remote tracking branch (origin/main)에 로컬 브랜치를 일치 시킨다.
 
-3. 만약 작성 중인 코드가 있었고, 필요 없다고 생각하면 git clean을 통하여 삭제한다. (필요에 따라 사용)
+3. 만약 작성 중인 코드가 있었고, 필요 없다고 생각하면 **git clean**을 통하여 삭제한다. (필요에 따라 사용)
 ***
 
 ## git 터미널 명령어
