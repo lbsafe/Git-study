@@ -86,6 +86,21 @@
     ```html
     git branch 브랜치명
     ```
+    * git branch -d 브랜치명
+
+        ```html
+        git branch -d branch_test
+        
+        merge 가 완료된 브랜치를 삭제한다.
+        ```
+
+    * git branch -D 브랜치명
+        
+        ```html
+        git branch -D branch_test
+        
+        merge 하지 않은 브랜치를 삭제한다.
+        ```
 
 9. **git switch**
 
@@ -100,6 +115,68 @@
     ```html
     git merge 브랜치명
     ```
+
+    10-1. **다양한 merge 방법**
+
+    **:one: 3-way merge**
+    > 각 브랜치에 신규 commit이 있는 경우   
+    일반적인 merge옵션
+
+    ```html
+                       commit2-1	
+                     ↗          ↘
+    commit1 → commit2 → commit3 → commit4
+    ```
+
+    **:two: fast-forward merge**
+    > 기준 브랜치에 신규 commit이 없는 경우   
+    예시를 기준으로 commit2-2를 main 브랜치로 지칭
+
+    ```html
+                       commit2-1 → commit2-2(main)
+                     ↗
+    commit1 → commit2
+    ```
+    * **'git merge --no-ff 브랜치명'** 을 통해 3-way merge 강제로 가능
+
+    **:three: git rebase & merge**
+    > 신규 branch의 시작점을 다른 commit으로 옮긴다.   
+    간단하고 짧은 branch는 사용시 git log가 깔끔해진다.
+    
+    ```html
+    <Before>
+                       commit2-1 → commit2-2
+                     ↗
+    commit1 → commit2 → commit3
+    ```
+    ```html
+    <After>
+                                 commit2-1 → commit2-2
+                               ↗
+    commit1 → commit2 → commit3
+    ```
+    * **'git rebase & fast-forward merge'** 가 된다.   
+    * :warning:Conflict가 발생할 위험도가 크다.
+    * rebase & merge 과정 
+        1. 새로운 브랜치로 이동
+        2. 'git rebase 메인 브랜치명(main)'
+        3. 메인 브랜치(main) 이동 후 'git merge 새로운 브랜치명'
+
+    **:four: squash & merge**
+    > 새 브랜치의 커밋 내용을 합쳐서 메인 브랜치에 새로 커밋 내역을 만든다.
+
+    ```html
+    <Before>
+                       commit2-1 → commit2-2
+                     ↗
+    commit1 → commit2 → commit3
+    ```
+    ```html
+    <After>
+        
+    commit1 → commit2 → commit3 → commit4
+    ```
+    * **'git merge --squash 새 브랜치명'**
 
     **:exclamation: 주의사항**   
     * 브랜치를 합칠 때는 기준이 될 브랜치로 이동 후 merge한다.   
