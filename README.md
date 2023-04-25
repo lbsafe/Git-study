@@ -157,10 +157,10 @@
     ```
     * **'git rebase & fast-forward merge'** 가 된다.   
     * :warning:Conflict가 발생할 위험도가 크다.
-    * rebase & merge 과정 
-        1. 새로운 브랜치로 이동
-        2. 'git rebase 메인 브랜치명(main)'
-        3. 메인 브랜치(main) 이동 후 'git merge 새로운 브랜치명'
+    * rebase & merge 과정   
+        - step1. 새로운 브랜치로 이동   
+        - step2. 'git rebase 메인 브랜치명(main)'   
+        - step3. 메인 브랜치(main) 이동 후 'git merge 새로운 브랜치명'   
 
     **:four: squash & merge**
     > 새 브랜치의 커밋 내용을 합쳐서 메인 브랜치에 새로 커밋 내역을 만든다.
