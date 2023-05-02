@@ -14,23 +14,9 @@
     git init
     ```
 
-2. **git add test.html**
+2. **git add**
 
     >파일 현재 상태 기록 => 스테이징한다.
-    ```html
-    git add 파일명
-    ```
-
-3. **git commit -m'test'**
-
-    >파일에 설명을 첨부한다.
-    ```html
-    git commit -m'테스트입니다.'
-    ```
-
-4. **git add**
-
-    >파일을 스테이징한다.
     * 특정 파일 스테이징
     
         ```html
@@ -47,21 +33,28 @@
         git add test.html test2.html
         ```
 
-5. **git status**
+3. **git commit -m'test'**
+
+    >파일에 설명을 첨부한다.
+    ```html
+    git commit -m'테스트입니다.'
+    ```
+
+4. **git status**
 
     >git 상태창 열기
     ```html
     git status
     ```
 
-6. **git log**
+5. **git log**
 
     >commit 내역 조회
     ```html
     git log --all --online
     ```
 
-7. **git diff**
+6. **git diff**
 
     >최근 commit과 현재 파일을 비교해서 보여준다.
     * git diff
@@ -80,7 +73,7 @@
     >Git Graph 확장자를 통해 더 명확한 비교가 가능하다.   
     단축키 ctrl + k + g
 
-8. **git branch**
+7. **git branch**
 
     >브랜치를 생성해준다.
     ```html
@@ -102,14 +95,14 @@
         merge 하지 않은 브랜치를 삭제한다.
         ```
 
-9. **git switch**
+8. **git switch**
 
     >브랜치로 이동한다.
     ```html
     git switch 브랜치명
     ```
 
-10. **git merge**
+9. **git merge**
 
     >브랜치를 합친다.
     ```html
@@ -182,7 +175,7 @@
     * 브랜치를 합칠 때는 기준이 될 브랜치로 이동 후 merge한다.   
     * Conflct(충돌)발생 시 해당 코드를 수정하고 git add와 git commit을 해준다.
     
-11. **git fetch**
+10. **git fetch**
 
     >원격 저장소의 변경사항을 로컬 저장소로 가져온다. 이때 git pull과 다르게 병합은 하지 않는다.
     
@@ -195,7 +188,7 @@
         prune은 fetching 하기 전, 리모트에 존재하지 않는 remote tracking branch를 삭제한다.
         ```
 
-12. **git reset**
+11. **git reset**
 
     >커밋 취소하기
 
@@ -250,7 +243,7 @@
     * branch를 공유하는 협업에서는 다른 사용자에게 에러를 발생시킬 수 있기에 사용을 자제한다.
     * 커밋이 로컬과 원격의 커밋 히스토리가 불일치해도 **git push --force** 로 강제 push 가능
 
-13. **git revert**
+12. **git revert**
 
     > 커밋 내용 되돌리기
 
