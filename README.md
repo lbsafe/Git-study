@@ -249,8 +249,28 @@
 
     ```html
     git revert 2664ce8(돌아갈 COMMIT ID)
+    -> 특정 커밋의 내용만을 되돌리기에 코드충돌을 최소화 한다.
 
-    특정 커밋의 내용만을 되돌리기에 코드충돌을 최소화 한다.
+    git revert 2664ce8(돌아갈 COMMIT ID) 2234ce9(돌아갈 COMMIT ID)
+    -> 여러개의 커밋 내역도 취소가 가능하다.
+
+    git revert HEAD
+    -> 최근 커밋을 취소 한다.
+    ```
+
+13. **git restore**
+
+    > 특정 파일 내용 복구하기
+
+    ```html
+    git restore test.html(복구할 파일 명)
+    -> 최근 커밋의 파일로 복구된다.
+
+    git restore --source 2664ce8(복구할 COMMIT ID) test.html(복구할 파일 명)
+    -> 특정 커밋의 시점으로 특정 파일을 복구한다.
+
+    git restore --staged test.html
+    -> 특정 파일 staging 취소 가능
     ```
 ***
 
