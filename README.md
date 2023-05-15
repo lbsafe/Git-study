@@ -272,6 +272,35 @@
     git restore --staged test.html
     -> 특정 파일 staging 취소 가능
     ```
+
+14. **git clone**
+
+    > 원격저장소 복제
+
+    ```html
+    git clone 원격저장소 주소
+    
+    ex) git clone https://github.com/lbsafe/Git-study.git
+    ```
+    
+    **:warning: 참고사항**   
+    * 원격저장소 복제 해도 팀원의 아이디를 등록해야 git push가 가능하다.   
+    (github 기준) Settings -> Collaborators
+
+15. **git pull**
+
+    > 원격저장소의 최신 내용을 로컬 저장소로 업데이트
+
+    ```html
+    git pull
+
+    git pull origin 브랜치명
+    -> 특정 브랜치만 가져오기
+    ```
+
+    **:warning: 참고사항**   
+    * git pull은 git fetch + git merge 이다.
+
 ***
 
 **:pushpin: 원격 저장소와 로컬 저장소의 소스코드를 일치시키는 방법**
