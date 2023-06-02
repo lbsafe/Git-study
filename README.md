@@ -318,6 +318,29 @@ git clean
 3. 만약 작성 중인 코드가 있었고, 필요 없다고 생각하면 **git clean**을 통하여 삭제한다. (필요에 따라 사용)
 ***
 
+***
+## git 협업 방법론
+
+1. **gitFlow**
+    
+    > 안정성이 높다.
+    
+    ```html
+    (main) - - - - - - - - - - - - - - - - - - - - (main) - - - - - (main)
+       ↓                                              ↑   ↘           ↑
+       ↓                                              ↑     (m) → → (hotfix) 
+       ↓                            (release) - - (release)            ↑
+       ↓                                ↑             ↓                ↑
+    (develop) - - - - - (develop) - (develop) - - (develop) - - - - (develop)
+       ↓                    ↑           ↑
+    (feature) → →(f)→ → (feature)       ↑
+                  ↓                     ↑
+              (feature/02) - - - - (feature/02)
+
+    ```
+
+***
+
 ## git 터미널 명령어
 
 1. **sudo**
