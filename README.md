@@ -323,8 +323,10 @@ git clean
 
 1. **gitFlow**
     
-    > 안정성이 높다.
-    
+    > 안정적으로 버전별 배포 가능   
+    :warning:안정적인 프로젝트에 적합하며, 테스트를 자주 해야한다.
+
+    *gitFlow 방법론 ex)*
     ```html
     (main) - - - - - - - - - - - - - - - - - - - - (main) - - - - - (main)
        ↓                                              ↑   ↘           ↑
@@ -336,9 +338,28 @@ git clean
     (feature) → →(f)→ → (feature)       ↑
                   ↓                     ↑
               (feature/02) - - - - (feature/02)
-
     ```
+    * main - 메인 브랜치
+    * devlop - 메인 복사 브랜치
+    * feature - 기능 추가 곁 가지 브랜치
+    * release - 임시 테스트 브랜치
+    * hotfix - 긴급수정 브랜치
+  
+2. **Trunk-based**
 
+    > 메인 브랜치 코드 하나만 관리   
+    :warning:필요에 따라 수정하여 사용
+
+    *Trunk-based 방법론 ex)*
+    ```html
+                 (feature/01)
+                   ↑       ↓
+    (main) → → (main) → → (main) → → (main) → → (main)
+                              ↑        ↓
+                             (feature/02)
+    ```
+    * main - 메인 브랜치
+    * feature - 기능 추가 곁 가지 브랜치
 ***
 
 ## git 터미널 명령어
