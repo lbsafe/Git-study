@@ -355,7 +355,7 @@ git clean
                  (feature/01)
                    ↑       ↓
     (main) → → (main) → → (main) → → (main) → → (main)
-                              ↑        ↓
+                              ↓        ↑
                              (feature/02)
     ```
     * main - 메인 브랜치
