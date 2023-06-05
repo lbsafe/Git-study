@@ -301,6 +301,35 @@
     **:warning: 참고사항**   
     * git pull은 git fetch + git merge 이다.
 
+16. **git stash**
+
+    > 코드 임시 보관하기
+
+    ```html
+    git stash
+    -> 코드 보관 - 여러번 가능
+
+    git stash list
+    -> 보관 된 코드 목록 조회
+
+    git stash save '메모'
+    -> 코드 보관 시 메모 첨부 가능
+
+    git stash pop
+    -> 가장 최근에 보관한 코드 불러오기
+
+    git stash pop 번호
+    -> stash 번호로 특정 보관한 코드 불러오기
+
+    git stash drop 번호
+    -> 특정 stash 삭제하기
+
+    git stash clear
+    -> stash 전부 삭제하기
+    ```
+
+    **:warning: 참고사항**   
+    * staging 하지 않은 파일은 stash가 안될 수 있다.
 ***
 
 **:pushpin: 원격 저장소와 로컬 저장소의 소스코드를 일치시키는 방법**
@@ -318,7 +347,6 @@ git clean
 3. 만약 작성 중인 코드가 있었고, 필요 없다고 생각하면 **git clean**을 통하여 삭제한다. (필요에 따라 사용)
 ***
 
-***
 ## git 협업 방법론
 
 1. **gitFlow**
