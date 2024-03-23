@@ -11,7 +11,7 @@
     >git 사용을 선언한다.
 
     ```html
-    git init
+    git init 
     ```
 
 2. **git add**
